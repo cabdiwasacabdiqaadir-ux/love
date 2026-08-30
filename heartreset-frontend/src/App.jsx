@@ -696,7 +696,7 @@ function HomePage({ onStart, onLogin }) {
   ];
 
   return (
-    <main className="max-w-6xl mx-auto px-6 overflow-hidden">
+    <main className="max-w-6xl mx-auto overflow-hidden">
       {/* Hero Section */}
       <section className="grid lg:grid-cols-12 gap-12 items-center py-16 md:py-24">
         <div className="lg:col-span-7 animate-in text-left">
@@ -841,7 +841,7 @@ function AuthPage({ mode, onSwitch, onSubmit }) {
       </Card>
       
       <p className="text-xs text-center text-slate-400 mt-6">
-        Connected to your HeartReset API. Ensure your backend server is running correctly.
+        By continuing, you agree to our <a href="#" className="underline hover:text-violet-600">Terms of Service</a> and <a href="#" className="underline hover:text-violet-600">Privacy Policy</a>.
       </p>
     </main>
   );
@@ -999,7 +999,7 @@ function HeartStatusPage({ heart, recovery, onSave }) {
         <p className="text-sm text-slate-500 mb-6">Honesty is the catalyst for healing. Document what happened or reset your focus.</p>
         
         <label className="block mb-6">
-          <span className="text-xs font-bold uppercase tracking-wider text-slate-500 mb-2 block">Catalyst / Note</span>
+          <span className="text-xs font-bold uppercase tracking-wider text-slate-400 mb-2 block">Catalyst / Note</span>
           <textarea
             className="w-full font-body text-sm rounded-2xl border bg-slate-50 p-4 outline-none focus:bg-white focus:ring-2 focus:ring-violet-500/20 focus:border-violet-600 transition-all"
             style={{ borderColor: "#E2E8F0" }}
